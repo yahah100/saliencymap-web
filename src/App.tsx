@@ -1,8 +1,12 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Col, Row, Select} from 'antd';
 import { AppstoreOutlined, MailOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
+
+const handleChange = (value: string) => {
+  console.log(`selected ${value}`);
+};
 
 function App() {
   return (
@@ -18,8 +22,26 @@ function App() {
           </Menu.Item>
         </Menu>
       </Header>
-      <Content style={{ padding: '0 50px' }}>
-        <div className="site-layout-content">Welcome to my GitHub page!</div>
+      <Content>
+        <Row>
+          <Col span={8}>
+          <Select
+            defaultValue="lucy"
+            style={{ width: 120 }}
+            onChange={handleChange}
+            options={[
+              { value: 'jack', label: 'Jack' },
+              { value: 'lucy', label: 'Lucy' },
+              { value: 'Yiminghe', label: 'yiminghe' },
+              { value: 'disabled', label: 'Disabled', disabled: true },
+            ]}
+          />
+          
+          </Col>
+          <Col span={8} offset={8}>col-8
+          
+          </Col>
+        </Row>
       </Content>
       <Footer style={{ textAlign: 'center' }}>My GitHub Page created with Ant Design</Footer>
     </Layout>
