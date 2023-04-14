@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/saliencymap-web/static/css/main.073c9b0a.css",
+    "main.js": "/saliencymap-web/static/js/main.7f3af547.js",
+    "static/js/787.84fc27c8.chunk.js": "/saliencymap-web/static/js/787.84fc27c8.chunk.js",
+    "static/media/logo.svg": "/saliencymap-web/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/saliencymap-web/index.html",
+    "main.073c9b0a.css.map": "/saliencymap-web/static/css/main.073c9b0a.css.map",
+    "main.7f3af547.js.map": "/saliencymap-web/static/js/main.7f3af547.js.map",
+    "787.84fc27c8.chunk.js.map": "/saliencymap-web/static/js/787.84fc27c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7f3af547.js"
+  ]
+}
