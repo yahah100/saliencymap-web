@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout, Menu } from 'antd';
+import { AppstoreOutlined, MailOutlined } from '@ant-design/icons';
+
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header>
+        <div className="logo" />
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+          <Menu.Item key="1" icon={<MailOutlined />}>
+            Home
+          </Menu.Item>
+          <Menu.Item key="2" icon={<AppstoreOutlined />}>
+            About
+          </Menu.Item>
+        </Menu>
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+        <div className="site-layout-content">Welcome to my GitHub page!</div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>My GitHub Page created with Ant Design</Footer>
+    </Layout>
   );
 }
 
